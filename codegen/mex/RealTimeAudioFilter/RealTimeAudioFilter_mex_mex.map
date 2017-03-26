@@ -1,0 +1,6 @@
+_mexFunction
+_emlrtMexFcnProperties
+_RealTimeAudioFilter
+_RealTimeAudioFilter_initialize
+_RealTimeAudioFilter_terminate
+_RealTimeAudioFilter_atexit

@@ -1,0 +1,75 @@
+<html>
+<head>
+<div class="baselog">
+<link rel="stylesheet" href="resources/matlab-report-styles.css" type="text/css" />
+<style type="text/css" media="screen">
+div.treeview { white-space: nowrap; }
+.treeview img { border: 0px; vertical-align: middle; }
+.trigger { cursor: pointer; }
+.branch { display: none; margin-left: 22px; }
+span.lnnolink { cursor: pointer; color: blue; text-decoration: underline; padding: 1 }
+span.lnnonorm { color: grey; padding: 1 }
+span.textnorm { color: black; padding: 1 }
+span.textcmnt { color: green; padding: 1 }
+span.msglink { cursor: pointer; color: blue; text-decoration: underline }
+span.treelink { cursor: pointer; color: blue; text-decoration: underline }
+.error { color: red; }
+.fcflink { cursor: pointer; color: blue; text-decoration: underline }
+div.tooltip { visibility: hidden; position: fixed;
+  background-color: lightyellow; border: 1px solid black; }
+.td-linebottomrt-gray {border-bottom:1px solid #BBB; border-right:1px solid #BBB;background-color:#F0F0F0;}
+.td-linebottomrt-link {border-bottom:1px solid #BBB; border-right:1px solid #BBB;color:Blue;}
+</style>
+</div>
+<title>Code Generation Report For 'RealTimeAudioFilter'</title>
+</head>
+<body>
+<div class="report-head">MATLAB Coder Build Log</div><p/>
+<div class="baselog">
+<div class="grayline"></div>
+<table cellpadding="4" cellspacing="1"><tr>
+<td align="left" class="td-linebottomrt-gray" colspan="2">Build Parameters</td>
+</tr>
+<tr><td align="left" valign="top" class="td-linebottomrt">Build directory</td>
+<td align="left" valign="top" class="td-linebottomrt-link"><a href="matlab: cd('/Users/brittanysweyer/Documents/MATLAB/codegen/exe/RealTimeAudioFilter')">/Users/brittanysweyer/Documents/MATLAB/codegen/exe/RealTimeAudioFilter</a></td></tr>
+</table>
+<br/>
+<table border="1" cellpadding="4" cellspacing="1" width="100%">
+<tr><td align="left" class="td-linebottomrt-gray">Build Log</td></tr>
+<tr><td valign="top" class="td-script">
+<pre>
+<span class="td-line-number">    1   </span><span class="td-line-normal">Error executing command "touch -c /home/pi/codegen/exe/RealTimeAudioFilter/*.*;make -f RealTimeAudioFilter_rtw.mk all -C /home/pi/codegen/exe/RealTimeAudioFilter". Details:</span>
+<span class="td-line-number">    2   </span><span class="td-line-normal"></span>
+<span class="td-line-number">    3   </span><span class="td-line-normal">STDERR: /usr/bin/ld: cannot open output file /Users/brittanysweyer/Documents/MATLAB/RealTimeAudioFilter.elf: No such file or directory</span>
+<span class="td-line-number">    4   </span><span class="td-line-normal">collect2: error: ld returned 1 exit status</span>
+<span class="td-line-number">    5   </span><span class="td-line-normal">make: *** [/Users/brittanysweyer/Documents/MATLAB/RealTimeAudioFilter.elf] Error 1</span>
+<span class="td-line-number">    6   </span><span class="td-line-normal"></span>
+<span class="td-line-number">    7   </span><span class="td-line-normal">STDOUT: make: Entering directory '/home/pi/codegen/exe/RealTimeAudioFilter'</span>
+<span class="td-line-number">    8   </span><span class="td-line-normal">gcc -c -MMD -MP -MF"RealTimeAudioFilter_initialize.c.dep" -MT"RealTimeAudioFilter_initialize.c.o" -O2 -DMODEL=RealTimeAudioFilter -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I./ -o "RealTimeAudioFilter_initialize.c.o" "RealTimeAudioFilter_initialize.c"</span>
+<span class="td-line-number">    9   </span><span class="td-line-normal">gcc -c -MMD -MP -MF"RealTimeAudioFilter_terminate.c.dep" -MT"RealTimeAudioFilter_terminate.c.o" -O2 -DMODEL=RealTimeAudioFilter -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I./ -o "RealTimeAudioFilter_terminate.c.o" "RealTimeAudioFilter_terminate.c"</span>
+<span class="td-line-number">   10   </span><span class="td-line-normal">gcc -c -MMD -MP -MF"RealTimeAudioFilter.c.dep" -MT"RealTimeAudioFilter.c.o" -O2 -DMODEL=RealTimeAudioFilter -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I./ -o "RealTimeAudioFilter.c.o" "RealTimeAudioFilter.c"</span>
+<span class="td-line-number">   11   </span><span class="td-line-normal">gcc -c -MMD -MP -MF"audioDeviceReader.c.dep" -MT"audioDeviceReader.c.o" -O2 -DMODEL=RealTimeAudioFilter -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I./ -o "audioDeviceReader.c.o" "audioDeviceReader.c"</span>
+<span class="td-line-number">   12   </span><span class="td-line-normal">gcc -c -MMD -MP -MF"SystemCore.c.dep" -MT"SystemCore.c.o" -O2 -DMODEL=RealTimeAudioFilter -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I./ -o "SystemCore.c.o" "SystemCore.c"</span>
+<span class="td-line-number">   13   </span><span class="td-line-normal">gcc -c -MMD -MP -MF"audioDeviceWriter.c.dep" -MT"audioDeviceWriter.c.o" -O2 -DMODEL=RealTimeAudioFilter -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I./ -o "audioDeviceWriter.c.o" "audioDeviceWriter.c"</span>
+<span class="td-line-number">   14   </span><span class="td-line-normal">gcc -c -MMD -MP -MF"AudioFileWriter.c.dep" -MT"AudioFileWriter.c.o" -O2 -DMODEL=RealTimeAudioFilter -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I./ -o "AudioFileWriter.c.o" "AudioFileWriter.c"</span>
+<span class="td-line-number">   15   </span><span class="td-line-normal">gcc -c -MMD -MP -MF"setup.c.dep" -MT"setup.c.o" -O2 -DMODEL=RealTimeAudioFilter -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I./ -o "setup.c.o" "setup.c"</span>
+<span class="td-line-number">   16   </span><span class="td-line-normal">gcc -c -MMD -MP -MF"step.c.dep" -MT"step.c.o" -O2 -DMODEL=RealTimeAudioFilter -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I./ -o "step.c.o" "step.c"</span>
+<span class="td-line-number">   17   </span><span class="td-line-normal">gcc -c -MMD -MP -MF"filter.c.dep" -MT"filter.c.o" -O2 -DMODEL=RealTimeAudioFilter -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I./ -o "filter.c.o" "filter.c"</span>
+<span class="td-line-number">   18   </span><span class="td-line-normal">gcc -c -MMD -MP -MF"HostLib_Audio.c.dep" -MT"HostLib_Audio.c.o" -O2 -DMODEL=RealTimeAudioFilter -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I./ -o "HostLib_Audio.c.o" "HostLib_Audio.c"</span>
+<span class="td-line-number">   19   </span><span class="td-line-normal">gcc -c -MMD -MP -MF"HostLib_MMFile.c.dep" -MT"HostLib_MMFile.c.o" -O2 -DMODEL=RealTimeAudioFilter -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I./ -o "HostLib_MMFile.c.o" "HostLib_MMFile.c"</span>
+<span class="td-line-number">   20   </span><span class="td-line-normal">gcc -c -MMD -MP -MF"HostLib_Multimedia.c.dep" -MT"HostLib_Multimedia.c.o" -O2 -DMODEL=RealTimeAudioFilter -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I./ -o "HostLib_Multimedia.c.o" "HostLib_Multimedia.c"</span>
+<span class="td-line-number">   21   </span><span class="td-line-normal">gcc -c -MMD -MP -MF"HostLib_rtw.c.dep" -MT"HostLib_rtw.c.o" -O2 -DMODEL=RealTimeAudioFilter -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I./ -o "HostLib_rtw.c.o" "HostLib_rtw.c"</span>
+<span class="td-line-number">   22   </span><span class="td-line-normal">gcc -c -MMD -MP -MF"rt_nonfinite.c.dep" -MT"rt_nonfinite.c.o" -O2 -DMODEL=RealTimeAudioFilter -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I./ -o "rt_nonfinite.c.o" "rt_nonfinite.c"</span>
+<span class="td-line-number">   23   </span><span class="td-line-normal">gcc -c -MMD -MP -MF"rtGetNaN.c.dep" -MT"rtGetNaN.c.o" -O2 -DMODEL=RealTimeAudioFilter -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I./ -o "rtGetNaN.c.o" "rtGetNaN.c"</span>
+<span class="td-line-number">   24   </span><span class="td-line-normal">gcc -c -MMD -MP -MF"rtGetInf.c.dep" -MT"rtGetInf.c.o" -O2 -DMODEL=RealTimeAudioFilter -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I./ -o "rtGetInf.c.o" "rtGetInf.c"</span>
+<span class="td-line-number">   25   </span><span class="td-line-normal">gcc -c -MMD -MP -MF"main.c.dep" -MT"main.c.o" -O2 -DMODEL=RealTimeAudioFilter -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I./ -o "main.c.o" "main.c"</span>
+<span class="td-line-number">   26   </span><span class="td-line-normal">echo "### Creating standalone executable "/Users/brittanysweyer/Documents/MATLAB/RealTimeAudioFilter.elf" ..."</span>
+<span class="td-line-number">   27   </span><span class="td-line-normal">### Creating standalone executable /Users/brittanysweyer/Documents/MATLAB/RealTimeAudioFilter.elf ...</span>
+<span class="td-line-number">   28   </span><span class="td-line-normal">gcc -lrt -lpthread -ldl -lm -ldl -lm -ldl -lm -ldl -lm -ldl -o /Users/brittanysweyer/Documents/MATLAB/RealTimeAudioFilter.elf RealTimeAudioFilter_initialize.c.o RealTimeAudioFilter_terminate.c.o RealTimeAudioFilter.c.o audioDeviceReader.c.o SystemCore.c.o audioDeviceWriter.c.o AudioFileWriter.c.o setup.c.o step.c.o filter.c.o HostLib_Audio.c.o HostLib_MMFile.c.o HostLib_Multimedia.c.o HostLib_rtw.c.o rt_nonfinite.c.o rtGetNaN.c.o rtGetInf.c.o main.c.o  -lm -lm -lstdc++</span>
+<span class="td-line-number">   29   </span><span class="td-line-normal">RealTimeAudioFilter_rtw.mk:325: recipe for target '/Users/brittanysweyer/Documents/MATLAB/RealTimeAudioFilter.elf' failed</span>
+<span class="td-line-number">   30   </span><span class="td-line-normal">make: Leaving directory '/home/pi/codegen/exe/RealTimeAudioFilter'</span>
+</pre>
+</td></tr></table>
+</div>
+</body>
+</html>
