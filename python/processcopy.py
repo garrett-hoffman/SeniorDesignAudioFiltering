@@ -4,23 +4,22 @@ import numpy as np
 from ctypes import *
 
 pa = PyAudio()
-audio = CDLL('./RealTimeAudioFilter_new.so')
+#audio = CDLL('./RealTimeAudioFilter.so')
 
 NORM_CONST = 32768.0
 D_TYPE = np.int16
 
 def callback(in_data, frame_count, time_info, status):
-    	audio_data = np.fromstring(in_data, dtype=D_TYPE)
-	out = audio.RealTimeAudioFilter(in_data)
-	print out
-	return (out.astype(D_TYPE).tostring(), paContinue)
+#    	audio_data = np.fromstring(in_data, dtype=D_TYPE)
+#	out = audio.RealTimeAudioFilter(in_data)
+	return (in_data, paContinue)
 
 stream = pa.open(format = paInt16,
 	channels = 1,
         rate = 44100,
 	input = True,
         output = True,
-        frames_per_buffer = 4096,
+        frames_per_buffer = 1024,
         stream_callback = callback)
 
 while stream.is_active():
